@@ -1,6 +1,7 @@
 # sap-production-routing-sql
 
-sap-production-routing-sql は、主にエッジアプリケーションにおいて、SAPと連携された作業手順データを保存するSQLテーブルを作成するためのレポジトリです。
+sap-production-routing-sql は、主にエッジアプリケーションにおいて、SAPと連携された作業手順データを保存するSQLテーブルを作成するためのレポジトリです。  
+sap-production-routing-sql は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 ## sqlの設定ファイル
 
