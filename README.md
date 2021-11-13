@@ -10,7 +10,9 @@ https://api.sap.com/api/OP_API_PRODUCTION_ROUTING_0001/overview
 
 ## sqlの設定ファイル
 
-sap-production-routing-sql には、sqlの設定ファイルとして、sap-production-routing-sql.sqlが含まれています。
+sap-production-routing-sql には、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
+
+* sap-production-routing-sql.sql（SAP 作業手順）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
