@@ -16,7 +16,7 @@ CREATE TABLE `sap-production-routing`
     `BillOfMaterial`         varchar(8) DEFAULT NULL,
     `BillOfMaterialItemNodeNumber` varchar(4) DEFAULT NULL,
     `MatlCompIsMarkedForBackflush` varchar(1) DEFAULT NULL,
-    `ProductionRoutingOpIntID` varchar(4) DEFAULT NULL,
+    `ProductionRoutingOpIntID` int(8) DEFAULT NULL,
     `WorkCenterInternalID`   varchar(8) DEFAULT NULL,
     `WorkCenterInternalID_desc` varchar(40) DEFAULT NULL,
     `Operation`              varchar(40) DEFAULT NULL,
