@@ -13,7 +13,7 @@ CREATE TABLE `sap-production-routing`
     `IsMarkedForDeletion`    varchar(1) DEFAULT NULL,
     `ProdnRtgOpBOMItemInternalID` varchar(4) DEFAULT NULL,
     `BillOfMaterial`         varchar(8) DEFAULT NULL,
-    `BillOfMaterialItemNodeNumber` varchar(4) DEFAULT NULL,
+    `BillOfMaterialItemNodeNumber` int(8) DEFAULT NULL,
     `MatlCompIsMarkedForBackflush` varchar(1) DEFAULT NULL,
     `ProductionRoutingOpIntID` int(8) DEFAULT NULL,
     `WorkCenterInternalID`   varchar(8) DEFAULT NULL,
