@@ -18,7 +18,6 @@ CREATE TABLE `sap-production-routing`
     `ProductionRoutingOpIntID` int(8) DEFAULT NULL,
     `WorkCenterInternalID`   int(8) DEFAULT NULL,
     `Operation`              varchar(40) DEFAULT NULL,
-    `Operation_desc`         varchar(40) DEFAULT NULL,
     `OperationText`          varchar(40) DEFAULT NULL,
     `PurchasingInfoRecord`   varchar(10) DEFAULT NULL,
     `MaterialGroup`          varchar(9) DEFAULT NULL,
