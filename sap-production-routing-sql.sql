@@ -11,7 +11,6 @@ CREATE TABLE `sap-production-routing`
     `ValidityStartDate`      date DEFAULT NULL,
     `ValidityEndDate`        date DEFAULT NULL,
     `IsMarkedForDeletion`    varchar(1) DEFAULT NULL,
-    `ProductionRoutingOpIntID_BOM` varchar(4) DEFAULT NULL,
     `ProdnRtgOpBOMItemInternalID` varchar(4) DEFAULT NULL,
     `BillOfMaterial`         varchar(8) DEFAULT NULL,
     `BillOfMaterialItemNodeNumber` varchar(4) DEFAULT NULL,
