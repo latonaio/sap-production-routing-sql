@@ -1,9 +1,9 @@
 CREATE TABLE `sap-production-routing`
 (
+    `Product`                varchar(40) DEFAULT NULL,
+    `Plant`                  varchar(4) DEFAULT NULL,
     `ProductionRoutingGroup` varchar(8) DEFAULT NULL,
     `ProductionRouting`      varchar(2) DEFAULT NULL,
-    `Plant`                  varchar(4) DEFAULT NULL,
-    `Product`                varchar(40) DEFAULT NULL,
     `ProductionRoutingGroup_desc` varchar(40) DEFAULT NULL,
     `BillOfOperationsStatus` varchar(3) DEFAULT NULL,
     `MinimumLotSizeQuantity` float(13) DEFAULT NULL,
@@ -29,6 +29,6 @@ CREATE TABLE `sap-production-routing`
     `PlannedDeliveryDuration` int(3) DEFAULT NULL,
     `NumberOfOperationPriceUnits` int(5) DEFAULT NULL,
     `OpExternalProcessingPrice` float(11) DEFAULT NULL,
-    PRIMARY KEY (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingOpIntID`)
+    PRIMARY KEY (`Product`, `Plant`, `ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingOpIntID`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
