@@ -12,7 +12,10 @@ https://api.sap.com/api/OP_API_PRODUCTION_ROUTING_0001/overview
 
 sap-production-routing-sql には、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
 
-* sap-production-routing-sql.sql（SAP 作業手順）
+* sap-production-routing-sql-header-data.sql（SAP 作業手順 - ヘッダ）
+* sap-production-routing-sql-material-assignment-data.sql（SAP 作業手順 - 品目割当）
+* sap-production-routing-sql-sequence-data.sql（SAP 作業手順 - 順序）
+* sap-production-routing-sql-operation-data.sql（SAP 作業手順 - 作業）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
