@@ -16,6 +16,7 @@ sap-production-routing-sql には、sqlの設定ファイルとして以下のsq
 * sap-production-routing-sql-material-assignment-data.sql（SAP 作業手順 - 品目割当）
 * sap-production-routing-sql-sequence-data.sql（SAP 作業手順 - 順序）
 * sap-production-routing-sql-operation-data.sql（SAP 作業手順 - 作業）
+* sap-production-routing-sql-component-allocation-data.sql（SAP 作業手順 - 構成品目割当）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
