@@ -16,5 +16,6 @@ CREATE TABLE `sap_production_routing_sequence_data`
   `CreationDate`                   varchar(80) DEFAULT NULL,
   `LastChangeDate`                 varchar(80) DEFAULT NULL,
     PRIMARY KEY (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingSequence`, `ProductionRoutingSqncIntVers`)
+    CONSTRAINT `SapProductionRoutingSequenceData_fk` FOREIGN KEY (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingInternalVers`) REFERENCES `sap_production_routing_header_data` (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingInternalVers`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

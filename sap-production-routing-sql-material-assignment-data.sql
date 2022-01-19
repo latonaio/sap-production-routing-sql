@@ -12,5 +12,6 @@ CREATE TABLE `sap_production_routing_material_assignment_data`
   `ValidityEndDate`                  varchar(80) DEFAULT NULL,
   `ChangeNumber`                     varchar(12) DEFAULT NULL,
     PRIMARY KEY (`Product`, `Plant`, `ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingMatlAssgmt`, `ProductionRtgMatlAssgmtIntVers`)
+    CONSTRAINT `SapProductionRoutingMaterialAssignmentData_fk` FOREIGN KEY (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingInternalVers`) REFERENCES `sap_production_routing_header_data` (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingInternalVers`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

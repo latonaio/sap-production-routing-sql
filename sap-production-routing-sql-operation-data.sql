@@ -56,5 +56,6 @@ CREATE TABLE `sap_production_routing_operation_data`
   `ChangedDateTime`                  varchar(80) DEFAULT NULL,
   `PlainLongText`                    varchar(220) DEFAULT NULL,
     PRIMARY KEY (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingSequence`, `ProductionRoutingOpIntID`, `ProductionRoutingOpIntVersion`)
+    CONSTRAINT `SapProductionRoutingOperationData_fk` FOREIGN KEY (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingInternalVers`) REFERENCES `sap_production_routing_header_data` (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingInternalVers`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

@@ -18,5 +18,6 @@ CREATE TABLE `sap_production_routing_component_allocation_data`
   `ChangeNumber`                   varchar(12) DEFAULT NULL,
   `ChangedDateTime`                varchar(80) DEFAULT NULL,
     PRIMARY KEY (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingSequence`, `ProductionRoutingOpIntID`)
+    CONSTRAINT `SapProductionRoutingComponentData_fk` FOREIGN KEY (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingInternalVers`) REFERENCES `sap_production_routing_header_data` (`ProductionRoutingGroup`, `ProductionRouting`, `ProductionRoutingInternalVers`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
